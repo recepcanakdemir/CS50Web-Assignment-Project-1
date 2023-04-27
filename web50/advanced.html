@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+      
+           body{
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+                color:#202124;
+                overflow: hidden;
+                
+            }
+           
+            .links{
+                display: flex;
+                text-align: right;
+                list-style-type: none;
+                line-height: 1.5rem;
+                margin-right: 0;
+                justify-content: right;
+            }
+            .links li{
+                padding: .5rem;
+            }
+            .links li a{
+                text-decoration: none;
+            }
+            .forLeft{
+                position: relative;
+            }
+            
+            .container{
+                display: flex;
+                width: 100%;
+                justify-content: left;
+                
+            }
+            .container .labels{
+                display: flex;
+                flex-direction: column;
+                text-align:left;
+                
+            }
+            .container .labels label{
+                padding: 2px;
+                margin:11px;
+                height: 25px;
+            }
+            .container .inputs{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+            }
+            .container .inputs input{
+                padding: 1px 8px;
+                margin:10px;
+                height: 25px;
+                width: 100%;
+                border-radius: 2px;
+                border: 1px solid #d9d9d9;
+            }
+            .container .inputs input[type="submit"]{
+                background-color: #4d90fe;
+                color:#fff;
+                width: 150px;
+                font-size: 11px;
+                font-weight: bold;
+                border-radius: 2px;
+                height: 27px;
+                line-height: 27px;
+            }
+            .container .inputs div{
+                width: 113%;
+                text-align: right;
+            }
+            .container .inputs input:focus{
+                box-shadow: inset 0 0 2px rgb(165, 172, 177);
+                border: 1px solid #4d90fe;
+                outline-style: none;
+                caret-color: #999;
+                
+                
+            }
+            .biggerContainer{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: left;
+                text-align: left;
+            }
+            .biggerContainer h1{
+                padding-left: 3.7rem;
+                color:#D93025 ;
+                font-size: 20px;
+                font-weight: 300;
+                padding-bottom: 1.3rem;
+            }
+            .biggerContainer h3{
+                padding-left: 3.7rem;
+                padding-bottom: .2rem;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .biggerContainer .container{
+                padding-left: 3rem;
+            }
+            .bottomLine{
+                border-bottom: 1px solid #ebebeb;
+            }
+
+    
+          
+        </style>
+    </head>
+    <body>
+        <ul class="links">
+            <li><a href="index.html">Back To Google Search  </a></li>
+            <li><a href="image.html"> Google Image Search</a></li>
+        </ul>
+       
+        <form action="https://www.google.com/search" autocomplete="off" method="GET" role="search">
+            <div class="biggerContainer">
+                <h1>Advanced Search</h1>
+                <div class="bottomLine"></div>
+                <h3>Find pages with...</h3>
+                    <div class="container">
+                        <div class="labels">
+                            <label for="search">all these words:</label>
+                            <label for="search">this exact word or phrase:</label>
+                            <label for="search">any of these words:</label>
+                            <label for="search">none of these words:</label>
+                       </div> 
+                       <div class="inputs">
+                            <input type="text" name="as_q" id="box">
+                            <input type="text" name="as_epq" id="box">
+                            <input type="text" name="as_oq" id="box">
+                            <input type="text" name="as_eq" id="box">
+                            <div>
+                                <input type="submit" value="Advanced Search"> 
+                            </div>
+                       </div>
+                      
+                    </div>
+                </div>
+               
+
+        </form>
+          
+        </body>
+
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+      
+           body{
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+                color:#202124;
+                overflow: hidden;
+                
+            }
+            form{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+          
+            form > div > input{
+                margin: auto;
+            }
+            
+            form> div{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+            }
+            form > div>input{
+                width: 127px;
+                height: 36px;
+                margin:11px 4px;
+                padding: 0 16px;
+                border: none;
+            }
+            form>input[name="q"]{
+                width: 472px;
+                height: 46px;
+                margin: auto;
+                border-radius: 30px;
+                border: 2px #f4f4f4 solid;
+                padding: 0 20px 0 20px;
+            }
+            form > input[name="q"]:hover{
+                border: 2px ;
+                box-shadow: 1px 1px 5px #999;
+            }
+            form > input[name="q"]:focus{
+                border: none;
+                box-shadow: 1px 1px 5px #999;
+            }
+            #head{
+                font-size: 80px;
+                letter-spacing:-10px;
+                text-align: center;
+                margin-top: 160px; 
+                margin-bottom: 10px;
+                
+            }
+            
+
+            .g{
+                color: #2E6FE9;
+            }
+            .o1,.e{
+                color: #DF2F24;
+            }
+            .o2{
+                color: #EEA801;
+            }
+            .l{
+                color: #23953F;
+            }
+            .links{
+                display: flex;
+                text-align: right;
+                list-style-type: none;
+                line-height: 1.5rem;
+                margin-right: 0;
+                justify-content: right;
+            }
+            .links li{
+                padding: .5rem;
+            }
+            .links li a{
+                text-decoration: none;
+            }
+            
+            
+          
+        </style>
+    </head>
+    <body>
+        <ul class="links">
+            <li><a href="image.html">Google Image Search</a></li>
+            <li><a href="advanced.html">Google Advanced Search</a></li>
+        </ul>
+        
+        <h1 id="head"><span class="g">G</span>
+            <span class="o1">o</span>
+            <span class="o2">o</span>
+            <span class="g">g</span>
+            <span class="l">l</span>
+            <span class="e">e</span>
+        </h1>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+
+            <div>
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI">
+            </div>
+
+        </form>
+          
+        </body>
+
+
+</html>
